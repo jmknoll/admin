@@ -1,0 +1,35 @@
+
+
+<p>Search Fields</p>
+
+<%= form_tag agents_path, method: :get do %>
+	<p>
+		<%= text_field_tag :query, params[:query] %>
+		<%= submit_tag "Search", name: nil %>
+	</p>
+<% end %>
+
+<p>Search Results</p>
+	<table>
+		<thead>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>City</td>
+			<td>State</td>
+			<td>Email</td>
+			<td>Mobile</td>
+			<td>Last Address Sold</td>
+		</thead>
+		<% @agents.each do |agent| %>
+		<tr>
+			<td><%= agent.first_name %></td>
+			<td><%= agent.last_name %></td>
+			<td><%= agent.city %></td>
+			<td><%= agent.state %></td>
+			<td><%= agent.email %></td>
+			<td><%= agent.mobile %></td>
+			<td><%= agent.last_sold %></td>
+		</tr>
+		<% end %>
+	</table>
+

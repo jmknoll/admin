@@ -1,0 +1,28 @@
+// Place all the styles related to the agents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar {
+	min-height: 50px;
+}
+
+.sub-nav {
+	height: 50px;
+	background-color: #243250;
+}
+
+.search-results {
+	
+	td {
+		border: 1px solid grey;
+		text-align: center;
+	}
+
+	thead td {
+		background-color: #626262;
+		color: white;
+		font-weight: bold;
+		font-size: 1.1em;
+		width: 10%;
+	}
+}
