@@ -1,6 +1,6 @@
 class Agent < ActiveRecord::Base
 
-	include Tire::Model::Search
-	include Tire::Model::Callbacks
+	include Elasticsearch::Model
+	include Elasticsearch::Model::Callbacks
 
 end
